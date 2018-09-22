@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="./assets/javascript/app.js"></script>
+
+
 
 </head>
 
@@ -21,8 +24,141 @@
         <h1>Scary Movie Trivia</h1>
     </div>
 
+    <div class="container" id="timer">
+        <h2>Time Remaining: <h2>
+    </div>
+
+    <div>Ready to Start?</div>
+
     <div class="container" id="question-1">
-        <h2>Question 1</h2>
+        <img src="assets/images/q1 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3> 1 - "The Reaping" portrays which biblical events?</h3>
+        <button type="button" class="btn btn-dark" id="Q1" style="width: 100%;">The Destruction of Sodom & Gomorrah</button><br>
+        <button type="button" class="btn btn-secondary" id="Q1" style="width: 100%;">The Great Flood</button><br>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">The Plagues of Egypt</button><br>
+        <button type="button" class="btn btn-secondary" id="Q1" style="width: 100%;">David vs. Goliath</button><br>
+        <hr>
+    </div>
+
+    <div class="container" id="question-2">
+        <img src="./assets/images/q2 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>2 - Select the character name / actress for the mother in "The Ring", "The Ring 2", and "Rings."</h3>
+        <button type="button" class="btn btn-dark" id="q2a1" style="width: 100%;">Margaret White / Piper Laurie</button><br>
+        <button type="button" class="btn btn-secondary" id="correct" style="width: 100%;">Rachel Keller / Naomi
+            Watts</button><br>
+        <button type="button" class="btn btn-dark" id="q2a3" style="width: 100%;">Lynn Sear / Toni Collette</button><br>
+        <button type="button" class="btn btn-secondary" id="q2a4" style="width: 100%;">Annie Wilkes / Kathy Bates</button><br>
+    </div>
+
+    <div class="container" id="question-3">
+        <img src="./assets/images/q3 wrong answer.png" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>3 - As of September 2018, how many movies make up the "Paranormal Activity" series?</h3>
+        <button type="button" class="btn btn-dark" id="q3a1" style="width: 100%;">4</button><br>
+        <button type="button" class="btn btn-secondary" id="q3a2" style="width: 100%;">5</button><br>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">6</button><br>
+        <button type="button" class="btn btn-secondary" id="q3a4" style="width: 100%;">7</button><br>
+    </div>
+
+    <div class="container" id="question-4">
+        <img src="./assets/images/q4 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>4 - Which of the following characters are NOT a member of "The Losers Club" in Stephen King's IT?</h3>
+        <button type="button" class="btn btn-dark" id="q4a1" style="width: 100%;">Richard Tozier</button><br>
+        <button type="button" class="btn btn-secondary" id="q4a2" style="width: 100%;">Bill Denbrough</button><br>
+        <button type="button" class="btn btn-dark" id="q4a3" style="width: 100%;">Beverly Marsh</button><br>
+        <button type="button" class="btn btn-secondary" id="correct" style="width: 100%;">Henry Bowers</button><br>
+    </div>
+
+    <div class="container" id="question-5">
+        <img src="./assets/images/q5 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>5 - In "The Strangers", who does the girl in the blonde mask ask for at the door, during her initial
+            contact with Kristen & James?</h3>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">Tamara</button><br>
+        <button type="button" class="btn btn-secondary" id="q5a2" style="width: 100%;">Tanya</button><br>
+        <button type="button" class="btn btn-dark" id="q5a3" style="width: 100%;">Terrie</button><br>
+        <button type="button" class="btn btn-secondary" id="q5a4" style="width: 100%;">Tabatha</button><br>
+    </div>
+
+    <div class="container" id="question-6">
+        <img src="./assets/images/q6 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>6 - Darkness Falls tells the revenge story of which magical creature?</h3>
+        <button type="button" class="btn btn-dark" id="q6a1" style="width: 100%;">Jack Frost</button><br>
+        <button type="button" class="btn btn-secondary" id="q6a2" style="width: 100%;">Slenderman</button><br>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">The Toothfairy</button><br>
+        <button type="button" class="btn btn-secondary" id="q6a4" style="width: 100%;">Belsnickel</button><br>
+    </div>
+
+    <div class="container" id="question-7">
+        <img src="./assets/images/q7 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>7 - In what US City can you see the stairs that Damien fell down in The Exorcist?</h3>
+        <button type="button" class="btn btn-dark" id="q7a1" style="width: 100%;">Mount Hood, Oregon</button><br>
+        <button type="button" class="btn btn-secondary" id="q7a2" style="width: 100%;">Burkittsville, Maryland</button><br>
+        <button type="button" class="btn btn-dark" id="q7a3" style="width: 100%;">Vacherie, Louisiana</button><br>
+        <button type="button" class="btn btn-secondary" id="correct" style="width: 100%;">Georgetown, Washington
+            D.C.</button><br>
+    </div>
+
+    <div class="container" id="question-8">
+        <img src="./assets/images/q8 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>8 - What fictional Maine town is the setting for Stephen King's IT?</h3>
+        <button type="button" class="btn btn-dark" id="q8a1" style="width: 100%;">Castle Rock</button><br>
+        <button type="button" class="btn btn-secondary" id="q8a2" style="width: 100%;">Jersualem's Lot</button><br>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">Derry</button><br>
+        <button type="button" class="btn btn-secondary" id="q8a4" style="width: 100%;">Ogunquit</button><br>
+    </div>
+
+    <div class="container" id="question-9">
+        <img src="./assets/images/q9 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>9 - What is the correct chronological of the movies in "The Conjuring" universe?</h3>
+        <button type="button" class="btn btn-dark" id="q9a1" style="width: 100%;">Annabelle, The Conjuring, The Nun,
+            The Conjuring 2</button><br>
+        <button type="button" class="btn btn-secondary" id="correct" style="width: 100%;">The Nun, Annabelle, The
+            Conjuring, The Conjuring 2</button><br>
+        <button type="button" class="btn btn-dark" id="q9a3" style="width: 100%;">The Conjuring, The Conjuring 2,
+            Annabelle, The Nun</button><br>
+        <button type="button" class="btn btn-secondary" id="q9a4" style="width: 100%;">The Conjuring, The Nun, The
+            Conjuring 2, Annabelle
+        </button><br>
+    </div>
+
+    <div class="container" id="question-10">
+        <img src="./assets/images/q10 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>10 - In the movie Oculus, Kaylie begins eating an apple only to realize it's actually a(n):</h3>
+        <button type="button" class="btn btn-dark" id="q10a1" style="width: 100%;">Eyeball</button><br>
+        <button type="button" class="btn btn-secondary" id="correct" style="width: 100%;">Lightbulb</button><br>
+        <button type="button" class="btn btn-dark" id="q10a3" style="width: 100%;">Onion</button><br>
+        <button type="button" class="btn btn-secondary" id="q10a4" style="width: 100%;">Heart</button><br>
+    </div>
+
+    <div class="container" id="question-11">
+        <img src="./assets/images/q11 wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>11 - Who spent their summer at Camp Crystal Lake?</h3>
+        <button type="button" class="btn btn-dark" id="q11a1" style="width: 100%;">Freddy</button><br>
+        <button type="button" class="btn btn-secondary" id="q11a2" style="width: 100%;">Michael</button><br>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">Jason</button><br>
+        <button type="button" class="btn btn-secondary" id="q11a4" style="width: 100%;">Johnny</button><br>
+    </div>
+
+    <div class="container" id="question-12">
+        <img src="./assets/images/q12  wrong answer.jpg" style="margin: auto; height: 531px; width: 801px;">
+        <hr>
+        <h3>12 - The five main characters in Cabin in the Woods are associated with a specific trope, in order to
+            prevent the end of the world. Which trope is missing from the list:
+            <br><br>The Virgin, The Whore, The Fool, The Scholar.</h3>
+        <button type="button" class="btn btn-dark" id="correct" style="width: 100%;">The Athlete</button><br>
+        <button type="button" class="btn btn-secondary" id="q12a2" style="width: 100%;">The Healer</button><br>
+        <button type="button" class="btn btn-dark" id="q12a3" style="width: 100%;">The Protector</button><br>
+        <button type="button" class="btn btn-secondary" id="q12a4" style="width: 100%;">The Savior</button><br>
     </div>
 
 </body>

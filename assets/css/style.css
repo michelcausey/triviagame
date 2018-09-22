@@ -3,18 +3,37 @@
     margin: 10px auto 10px auto;
     background-color: #FF6633;
     color: #660033;
+    font-family: 'Arvo', serif;
+    border: solid white 2px;
 }
 
 h1 { 
     color: #660033;
     text-align: center;
+    font-family: 'Arvo', serif;
+    background-color: #53D901;
+    padding: 20px;
+    border: solid #151515 1px;
 }
 
 h2 {
     text-align: center; 
+    font-family: 'Arvo', serif;
 }
 
-font-family: 'Pacifico', cursive;
-font-family: 'Arvo', serif;
-font-family: 'Kavoon', cursive;
-font-family: 'Notable', sans-serif;
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#question-1, #question-3, #question-5, #question-7, #question-9, #question-11 {
+    color: #53D901;
+    background-color: #6A0888;
+}
+
+#timer {
+   background-color:#000000;
+   color:#FF4000;
+   margin-top: 20px;
+   margin-bottom: 0;
+}
