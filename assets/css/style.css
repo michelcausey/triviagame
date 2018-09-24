@@ -26,14 +26,14 @@ p {
     font-size: 20px;
 }
 
-#question-1, #question-3, #question-5, #question-7, #question-9, #question-11 {
-    color: #53D901;
-    background-color: #6A0888;
-}
-
 #timer {
    background-color:#000000;
    color:#FF4000;
    margin-top: 20px;
    margin-bottom: 0;
+}
+
+#question-div {
+    color: black;
+    font-size: 20px;
 }
