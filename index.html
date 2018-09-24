@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    
+
 
 
 
@@ -20,18 +20,20 @@
 
 <body background="assets/images/diagmonds.png">
 
-    <div class="container">
-        <h1>Scary Movie Trivia</h1>
-    </div>
-
-    <div class="container" id="timer">
-        <h2>Time Remaining: <h2>
-    </div>
-
-    <div class="container" id="question-div"></div>
-    <div class="container" id="answer-div"></div>
-    <div class="container" id="results"></div>
     
+
+    <div class="container" id="title-div">
+        <h1>Scary Movie Trivia</h1>
+        <hr>
+        <div class="container" id="timer"><h2>You have 30 seconds to answer each question</h2></div>
+    </div>
+
+    <button type="button" class="btn btn-warning" id="button">Ready to Start?</button>
+
+    <div class="container" id="questions-div"></div>
+    <div class="container" id="answers-div"></div>
+    <div class="container" id="results"></div>
+
     <script src="./assets/javascript/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
