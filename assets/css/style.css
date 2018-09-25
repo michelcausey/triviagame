@@ -8,12 +8,13 @@
 }
 
 h1 { 
-    color: #660033;
+    color: #330033;
+    background-color:  #00FF00;
     text-align: center;
     font-family: 'Arvo', serif;
-    background-color: #53D901;
     padding: 20px;
     border: solid #151515 1px;
+    font-size: 60px;
 }
 
 h2 {
@@ -22,7 +23,6 @@ h2 {
 }
 
 p {
-    font-weight: bold;
     font-size: 20px;
 }
 
@@ -40,7 +40,7 @@ p {
 }
 
 #answers-div {
-   background-color: #FF4000;
+   background-color: #330033;
    color: white;
 }
 
@@ -48,4 +48,18 @@ p {
     width: 100%;
     margin: 10px auto 10px auto;
     font-size: 48px;
+    background-color: #00FF00;
+    color: #330033;
+    border: dotted 2px; 
+    color: #330033;
+}
+
+#submit {
+    width: 100%;
+    margin: 10px auto 10px auto;
+    font-size: 48px;
+    background-color: #00FF00;
+    color: #330033;
+    border: dotted 2px; 
+    color: #330033;
 }
