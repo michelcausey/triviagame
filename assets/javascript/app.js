@@ -56,16 +56,16 @@ function Quiz() {
             correctAnswers++;
         } else if ($(this).is(':checked') && $(this).hasClass("incorrect")) {
             incorrectAnswers++;
-    }
-})
+        }
+    })
 }
 
-    function score() {
-        $("#results").show()
-        $("#photo-2").show()
-        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
-        $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
-    }
+function score() {
+    $("#results").show()
+    $("#photo-2").show()
+    $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
+    $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
+}
 
-    startGame()
-    stop()
+startGame()
+stop()
