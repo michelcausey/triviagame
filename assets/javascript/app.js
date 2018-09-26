@@ -8,6 +8,7 @@ function startGame() {
     $("#questions-div").hide()
     $("#photo-1").show()
     $("#photo-2").hide()
+    $("#results").hide()
 
     $("#button").on("click", function () {
         $("#button").hide() // after clicking the start button, the button will disappear
@@ -53,7 +54,7 @@ function Quiz() {
     $('input').click(function () {
         if ($(this).is(':checked') && $(this).hasClass("correct")) {
             correctAnswers++;
-        } else if ($(this).is(':checked')) {
+        } else if ($(this).is(':checked') && $(this).hasClass("incorrect")) {
             incorrectAnswers++;
     }
 })
