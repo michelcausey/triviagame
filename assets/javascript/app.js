@@ -1,23 +1,19 @@
 // create variables for the game, setting all to 0
 var correctAnswers = 0
 var incorrectAnswers = 0
-var notAnswered = 0
-var counter = 0
-
-
 
 function startGame() {
 
     // only the title, instructions, and start button should show
     $("#questions-div").hide()
+    $("#photo-1").show()
+    $("#photo-2").hide()
 
-    // after clicking the start button, the button will disappear
-    // after clicking the start button, begin the timer
-    // after clicking the start button, begin the quiz
     $("#button").on("click", function () {
-        $("#button").hide()
-        run()
-        Quiz()
+        $("#button").hide() // after clicking the start button, the button will disappear
+        $("#photo-1").hide()
+        run() // after clicking the start button, begin the timer
+        Quiz() // after clicking the start button, begin the quiz
     })
 }
 
@@ -34,41 +30,41 @@ function run() {
 // function that counts down by 1 second intervals
 function decrement() {
     timerCount--;
-    $("#timer").html("<h2>Time Remaining: " + timerCount + "</h2>")
+    $("#timer").html("<h2>You have " + timerCount + " seconds left.</h2>")
 
-    // display a warning at 15 seconds and stops the time when it reaches 0
     if (timerCount === 0) {
         $("#timer").html("<h2>Time is Up!</h2>")
         stop()
     }
 }
 
-// when the clock reaches 0 it will perform this function, to take away the question and display the results
 function stop() {
-    $("#submit").on("click", function () {
+    $("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock
         clearInterval(intervalID);
         $("#questions-div").hide()
-        $("#results").show()
+        score()
     })
 
 }
 
 function Quiz() {
     $("#questions-div").show()
-    $("input").each(function () {
-        if ($("input:checked") === true && $("input:checked").hasClass("correct")) {
-            correctAnswers++
-        } else {
-            incorrectAnswers++
-        }
-    })
+
+    $('input').click(function () {
+        if ($(this).is(':checked') && $(this).hasClass("correct")) {
+            correctAnswers++;
+        } else if ($(this).is(':checked')) {
+            incorrectAnswers++;
+    }
+})
 }
 
-$("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>") 
-$("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers / 4 + "</h2>")
+    function score() {
+        $("#results").show()
+        $("#photo-2").show()
+        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
+        $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
+    }
 
-console.log(correctAnswers)
-console.log(incorrectAnswers)
-
-startGame()
-stop()
+    startGame()
+    stop()

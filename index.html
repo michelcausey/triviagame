@@ -12,18 +12,19 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-
-
-
-
 </head>
 
 <body background="assets/images/diagmonds.png">
 
-
 <div class="wrapper">
     <div class="container" id="title-div">
         <h1>Scary Movie Trivia</h1>
+        <div id="photo-1">
+            <img src="https://media.giphy.com/media/3o7aTyXy0Xo6Kf1sRi/giphy.gif" style="width: 245px; height: 140px; margin-left: 55px; margin-top: 10px;">
+            <img src="https://media1.giphy.com/media/bcpJ7xEAqdpXq/giphy.gif" style="width: 245px; height: 140px; margin-top: 10px;">
+            <img src="http://24.media.tumblr.com/bb2a9552523079067650181e254c4dcb/tumblr_n6maqfTSLG1rp0vkjo1_500.gif" style="width: 245px; height: 140px; margin-top: 10px;">
+            <img src="https://media.giphy.com/media/3otPoJhe5AZrhllEeQ/giphy.gif" style="width: 245px; height: 140px; margin-top: 10px;">
+        </div>
         <hr>
         <div class="container" id="timer">
             <h2>You have 90 seconds...</h2>
@@ -35,99 +36,99 @@
     <div class="container" id="questions-div">
         <img src="./assets/images/q1 right answer.jpg" alt="The Reaping" style="height: 300px; width: 225px;">
         <p>1. 'The Reaping' portrays which biblical events?<br>
-            <input type="radio" name="question-1"> The Destruction of Sodom & Gomorrah<br>
-            <input type="radio" name="question-1"> The Great Flood<br>
+            <input type="radio" name="question-1" class="incorrect"> The Destruction of Sodom & Gomorrah<br>
+            <input type="radio" name="question-1" class="incorrect"> The Great Flood<br>
             <input type="radio" name="question-1" class="correct"> The Plagues of Egypt<br>
-            <input type="radio" name="question-1"> David vs. Goliath<br>
+            <input type="radio" name="question-1" class="incorrect"> David vs. Goliath<br>
         </p>
         <hr>
         <img src="./assets/images/q2 right answer.jpg" alt="The Ring" style="height: 300px; width: 225px;">
         <p>2. Select the correct character name / actress name of the mom from "The Ring," "The Ring 2," & "Rings":<br>
-            <input type="radio" name="question-2"> Margaret White / Piper Laurie<br>
+            <input type="radio" name="question-2" class="incorrect"> Margaret White / Piper Laurie<br>
             <input type="radio" name="question-2" class="correct"> Rachel Keller / Naomi Watts<br>
-            <input type="radio" name="question-2"> Lynn Sear / Toni Collette<br>
-            <input type="radio" name="question-2"> Annie Wilkes / Kathy Bates<br>
+            <input type="radio" name="question-2" class="incorrect"> Lynn Sear / Toni Collette<br>
+            <input type="radio" name="question-2" class="incorrect"> Annie Wilkes / Kathy Bates<br>
         </p>
         <hr>
         <img src="./assets/images/q3  right answer.jpg" alt="Paranormal Activity" style="height: 300px; width: 225px;">
         <p>3. As of September 2018, how many movies make up the Paranormal Activity series?<br>
-            <input type="radio" name="question-3"> 4<br>
-            <input type="radio" name="question-3"> 5<br>
+            <input type="radio" name="question-3" class="incorrect"> 4<br>
+            <input type="radio" name="question-3" class="incorrect"> 5<br>
             <input type="radio" name="question-3" class="correct"> 6<br>
-            <input type="radio" name="question-3"> 7<br>
+            <input type="radio" name="question-3" class="incorrect"> 7<br>
         </p>
         <hr>
         <img src="./assets/images/q4  right answer.jpg" alt="IT" style="height: 300px; width: 225px;">
         <p>4. Which of the following characters are NOT a member of "The Losers Club" in Stephen King's IT?<br>
-            <input type="radio" name="question-4"> Richard Tozier<br>
-            <input type="radio" name="question-4"> Bill Denbrough<br>
-            <input type="radio" name="question-4"> Beverly Marsh<br>
+            <input type="radio" name="question-4" class="incorrect"> Richard Tozier<br>
+            <input type="radio" name="question-4" class="incorrect"> Bill Denbrough<br>
+            <input type="radio" name="question-4" class="incorrect"> Beverly Marsh<br>
             <input type="radio" name="question-4" class="correct"> Henry Bowers<br>
         </p>
         <hr>
         <img src="./assets/images/q5 right answer.jpg" alt="The Strangers" style="height: 300px; width: 225px;">
         <p>5. In "The Strangers", who does the girl in the blonde mask ask for at the door, during her initial contact with Kristen & James?<br>
             <input type="radio" name="question-5" class="correct"> Tamara<br>
-            <input type="radio" name="question-5"> Tanya<br>
-            <input type="radio" name="question-5"> Terrie <br>
-            <input type="radio" name="question-5"> Tabatha<br>
+            <input type="radio" name="question-5" class="incorrect"> Tanya<br>
+            <input type="radio" name="question-5" class="incorrect"> Terrie <br>
+            <input type="radio" name="question-5" class="incorrect"> Tabatha<br>
         </p>
         <hr>
         <img src="./assets/images/q6 right answer.jpg" alt="Darkness Falls" style="height: 300px; width: 225px;">
         <p>6. "Darkness Falls" tells the revenge story of which magical creature? <br>
-            <input type="radio" name="question-6"> Jack Frost<br>
-            <input type="radio" name="question-6"> Slenderman<br>
+            <input type="radio" name="question-6" class="incorrect"> Jack Frost<br>
+            <input type="radio" name="question-6" class="incorrect"> Slenderman<br>
             <input type="radio" name="question-6" class="correct"> The Toothfairy <br>
-            <input type="radio" name="question-6"> Belsnickel<br>
+            <input type="radio" name="question-6" class="incorrect"> Belsnickel<br>
         </p>
         <hr>
         <img src="./assets/images/q7 right answer.jpg" alt="The Exorcist" style="height: 300px; width: 225px;">
         <p>7. In what US city can you see the stairs Damien fell down in "The Exorcist?" <br>
-            <input type="radio" name="question-7"> Mount Hood, Oregon<br>
-            <input type="radio" name="question-7"> Burkittsville, Maryland<br>
-            <input type="radio" name="question-7"> Vacherie, Louisiana<br>
+            <input type="radio" name="question-7" class="incorrect"> Mount Hood, Oregon<br>
+            <input type="radio" name="question-7" class="incorrect"> Burkittsville, Maryland<br>
+            <input type="radio" name="question-7" class="incorrect"> Vacherie, Louisiana<br>
             <input type="radio" name="question-7" class="correct"> Georgetown, Washington D.C.<br>
         </p>
         <hr>
         <img src="./assets/images/q8 right answer.jpg" alt="IT-2" style="height: 300px; width: 225px;">
         <p>8. What fictional Maine town is the setting for Stephen King's IT? <br>
-            <input type="radio" name="question-8"> Castle Rock<br>
-            <input type="radio" name="question-8"> Jerusalem's Lot<br>
+            <input type="radio" name="question-8" class="incorrect"> Castle Rock<br>
+            <input type="radio" name="question-8" class="incorrect"> Jerusalem's Lot<br>
             <input type="radio" name="question-8" class="correct"> Derry<br>
-            <input type="radio" name="question-8"> Ogunquit<br>
+            <input type="radio" name="question-8" class="incorrect"> Ogunquit<br>
         </p>
         <hr>
         <img src="./assets/images/q9 right answer.jpg" alt="Conjuring" style="height: 300px; width: 225px;">
         <p>9. Put the movies from "The Conjuring" series in chronological order: <br>
-            <input type="radio" name="question-9"> Annabelle, The Conjuring, The Nun, The Conjuring 2<br>
+            <input type="radio" name="question-9" class="incorrect"> Annabelle, The Conjuring, The Nun, The Conjuring 2<br>
             <input type="radio" name="question-9" class="correct"> The Nun, Annabelle, The Conjuring, The Conjuring 2<br>
-            <input type="radio" name="question-9"> The Conjuring, The Conjuring 2, Annabelle, The Nun<br>
-            <input type="radio" name="question-9"> The Conjuring, The Nun, The Conjuring 2, Annabelle<br>
+            <input type="radio" name="question-9" class="incorrect"> The Conjuring, The Conjuring 2, Annabelle, The Nun<br>
+            <input type="radio" name="question-9" class="incorrect"> The Conjuring, The Nun, The Conjuring 2, Annabelle<br>
         </p>
         <hr>
         <img src="./assets/images/q10 right answer.jpg" alt="Oculus" style="height: 300px; width: 225px;">
         <p>10. In the movie "Oculus", Kaylie begins eating an apple only to realize it's actually a(n): <br>
-            <input type="radio" name="question-10"> Eyeball<br>
+            <input type="radio" name="question-10" class="incorrect"> Eyeball<br>
             <input type="radio" name="question-10" class="correct"> Lightbulb<br>
-            <input type="radio" name="question-10"> Onion<br>
-            <input type="radio" name="question-10"> Heart<br>
+            <input type="radio" name="question-10" class="incorrect"> Onion<br>
+            <input type="radio" name="question-10" class="incorrect"> Heart<br>
         </p>
         <hr>
         <img src="./assets/images/q11 right answer.jpg" alt="Friday The 13th" style="height: 300px; width: 225px;">
         <p>11. Which child spent their (last) summer at Camp Crystal Lake? <br>
-            <input type="radio" name="question-11"> Freddy<br>
-            <input type="radio" name="question-11"> Michael<br>
+            <input type="radio" name="question-11" class="incorrect"> Freddy<br>
+            <input type="radio" name="question-11" class="incorrect"> Michael<br>
             <input type="radio" name="question-11" class="correct"> Jason<br> <!--pronounced JSON-->
-            <input type="radio" name="question-11"> Johnny<br>
+            <input type="radio" name="question-11" class="incorrect"> Johnny<br>
         </p>
         <hr>
         <img src="./assets/images/q12 right answer.jpg" alt="The Cabin in the Woods" style="height: 300px; width: 225px;">
         <p>12. The five main characters in "The Cabin in the Woods" represent a specific trope. Which trope is missing from the list:  
             The Virgin, The Whore, The Fool, The Scholar, and: <br>
             <input type="radio" name="question-12" class="correct"> The Athlete<br>
-            <input type="radio" name="question-12"> The Healer<br>
-            <input type="radio" name="question-12"> The Protector<br>
-            <input type="radio" name="question-12"> The Savior<br>
+            <input type="radio" name="question-12" class="incorrect"> The Healer<br>
+            <input type="radio" name="question-12" class="incorrect"> The Protector<br>
+            <input type="radio" name="question-12" class="incorrect"> The Savior<br>
         </p>
         <hr>
 
@@ -137,8 +138,10 @@
     <div class="container" id="results">
         <div id="correct-answers"></div>
         <div id="incorrect-answers"></div>
-        <div id="unanswered"></div>
-        <div id="results"></div>
+        <div id="photo-2">
+            <img src="http://24.media.tumblr.com/9530cd7211342f8574ce5a624a8ec875/tumblr_mrsqzw7dii1r2r5igo1_500.gif" style="margin-left: 50px;">
+            <img src="http://68.media.tumblr.com/39230c1255614e5a1abb8b5d2b8325a1/tumblr_ogfws9DHgM1rp0vkjo1_500.gif">
+        </div>
     </div>
 
     <script src="./assets/javascript/app.js"></script>
