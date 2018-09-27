@@ -59,3 +59,4 @@ $(document).ready(function () {
     score()
 })
 
+// this code was working until I opened it with the git.io website. I am not sure how else to format it to make this work.
