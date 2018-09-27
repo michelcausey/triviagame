@@ -17,7 +17,6 @@ $("#submit").on("click", function () { // when user clicks the submit button, it
 
 $(document).ready(function () {
     Quiz()
-})
 
     // set the clock to 90 seconds
     var timerCount = 90;
@@ -53,13 +52,10 @@ $(document).ready(function () {
                 correctAnswers++;
             } else if ($(this).is(':checked') && $(this).hasClass("incorrect")) {
                 incorrectAnswers++;
-            }
+            } 
         })
     }
 
-    function score() {
-        $("#results").show()
-        $("#photo-2").show()
-        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
-        $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
-    }
+    score()
+})
+
