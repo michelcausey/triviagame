@@ -2,70 +2,64 @@
 var correctAnswers = 0
 var incorrectAnswers = 0
 
-function startGame() {
-
-    // only the title, instructions, and start button should show
-    $("#questions-div").hide()
-    $("#photo-1").show()
-    $("#photo-2").hide()
-    $("#results").hide()
-
-    $("#button").on("click", function () {
-        $("#button").hide() // after clicking the start button, the button will disappear
-        $("#photo-1").hide()
-        run() // after clicking the start button, begin the timer
-        Quiz() // after clicking the start button, begin the quiz
-    })
-}
-
-// set the clock to 90 seconds
-var timerCount = 90;
-var intervalID;
-
-// ensures the timer starts over each time it runs down from 30 seconds
-function run() {
-    clearInterval(intervalID);
-    intervalID = setInterval(decrement, 1000)
-}
-
-// function that counts down by 1 second intervals
-function decrement() {
-    timerCount--;
-    $("#timer").html("<h2>You have " + timerCount + " seconds left.</h2>")
-
-    if (timerCount === 0) {
-        $("#timer").html("<h2>Time is Up!</h2>")
-        stop()
-    }
-}
-
-function stop() {
-    $("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock
-        clearInterval(intervalID);
-        $("#questions-div").hide()
-        score()
-    })
-
-}
-
-function Quiz() {
+$("#button").on("click", function () {
+    $("#button").hide() // after clicking the start button, the button will disappear
+    $("#photo-1").hide()
     $("#questions-div").show()
 
-    $('input').click(function () {
-        if ($(this).is(':checked') && $(this).hasClass("correct")) {
-            correctAnswers++;
-        } else if ($(this).is(':checked') && $(this).hasClass("incorrect")) {
-            incorrectAnswers++;
+})
+
+$("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock & score
+    clearInterval(intervalID);
+    $("#questions-div").hide()
+    score()
+})
+
+$(document).ready(function () {
+    Quiz()
+})
+
+    // set the clock to 90 seconds
+    var timerCount = 90;
+    var intervalID;
+
+    // ensures the timer starts over each time it runs down from 30 seconds
+    function run() {
+        clearInterval(intervalID);
+        intervalID = setInterval(decrement, 1000)
+    }
+
+    // function that counts down by 1 second intervals
+    function decrement() {
+        timerCount--;
+        $("#timer").html("<h2>You have " + timerCount + " seconds left.</h2>")
+
+        if (timerCount === 0) {
+            $("#timer").html("<h2>Time is Up!</h2>")
+            stop()
         }
-    })
-}
+    }
 
-function score() {
-    $("#results").show()
-    $("#photo-2").show()
-    $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
-    $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
-}
+    function stop() {
+            clearInterval(intervalID);
+            $("#questions-div").hide()
+            score()
+    }
 
-startGame()
-stop()
+    function Quiz() {
+        run()
+        $('input').click(function () {
+            if ($(this).is(':checked') && $(this).hasClass("correct")) {
+                correctAnswers++;
+            } else if ($(this).is(':checked') && $(this).hasClass("incorrect")) {
+                incorrectAnswers++;
+            }
+        })
+    }
+
+    function score() {
+        $("#results").show()
+        $("#photo-2").show()
+        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
+        $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
+    }
