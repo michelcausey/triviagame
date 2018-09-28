@@ -12,6 +12,7 @@ $("#button").on("click", function () {
 
 $(document).ready(function () {
             Quiz()
+            score()
 
             // set the clock to 90 seconds
             var timerCount = 90;
@@ -53,13 +54,11 @@ $(document).ready(function () {
 
             function score() {
                 $("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock & score
-                        clearInterval(intervalID);
-                        $("#questions-div").hide()
-                        $("#results").show()
-                        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
-                        $("#incorrect-answers").html("<h2># of correct answers: " + incorrectAnswers + "</h2>")
-                    })
-                }
-            })
-
-            score()
+                    clearInterval(intervalID);
+                    $("#questions-div").hide()
+                    $("#results").show()
+                    $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
+                    $("#incorrect-answers").html("<h2># of correct answers: " + incorrectAnswers + "</h2>")
+                })
+            }
+        })
