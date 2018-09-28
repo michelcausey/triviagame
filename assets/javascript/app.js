@@ -12,7 +12,6 @@ $("#button").on("click", function () {
 $("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock & score
     clearInterval(intervalID);
     $("#questions-div").hide()
-    score()
 })
 
 $(document).ready(function () {
@@ -55,6 +54,4 @@ $(document).ready(function () {
             } 
         })
     }
-
-    score()
 })
