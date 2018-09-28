@@ -30,6 +30,7 @@ $(document).ready(function () {
         if (timerCount === 0) {
             $("#timer").html("<h2>Time is Up!</h2>")
             stop()
+            score()
         }
     }
 
