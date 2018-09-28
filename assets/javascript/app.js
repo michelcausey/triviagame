@@ -6,12 +6,15 @@ $("#button").on("click", function () {
     $("#button").hide() // after clicking the start button, the button will disappear
     $("#photo-1").hide()
     $("#questions-div").show()
+    run()
 
 })
 
 $("#submit").on("click", function () { // when user clicks the submit button, it will stop the clock & score
     clearInterval(intervalID);
     $("#questions-div").hide()
+    stop()
+    score()
 })
 
 $(document).ready(function () {
@@ -54,4 +57,11 @@ $(document).ready(function () {
             } 
         })
     }
+
+    function score() {
+        $("#results").show()
+        $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
+        $("#incorrect-answers").html("<h2># of correct answers: " + incorrectAnswers + "</h2>")
+    }
+
 })

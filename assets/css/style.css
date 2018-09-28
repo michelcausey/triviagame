@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/images/diagmonds.png");
+    background-image: url("./assets/images/diagmonds.png");
 }
 
 .container {
@@ -72,9 +72,4 @@ p {
 #results {
     font-size: 48px;
     color: #00FF00;  
-    display: none;
-}
-
-#photo-2 {
-    display: none;
 }
