@@ -9,7 +9,6 @@ $("#button").on("click", function () {
     $("#button").hide() // after clicking the start button, the button will disappear
     $("#photo-1").hide()
     $("#questions-div").show()
-    run()
 
 })
 
