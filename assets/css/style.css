@@ -1,11 +1,7 @@
-body {
-    background-image: url("./assets/images/diagmonds.png");
-}
-
 .container {
     padding: 20px;
     margin: 10px auto 10px auto;
-    background-color: #4c4245;
+    background-color: #4a148c;
     color: #660033;
     border: solid white 2px;
     font-family: 'Oswald', sans-serif;
