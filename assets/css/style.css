@@ -72,4 +72,5 @@ p {
 #results {
     font-size: 48px;
     color: #00FF00;  
+    display: none;
 }

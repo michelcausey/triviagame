@@ -5,16 +5,17 @@ var incorrectAnswers = 0
 var timerCount = 90;
 var intervalID;
 
-$("#button").on("click", function () {
-    $("#button").hide() // after clicking the start button, the button will disappear
-    $("#photo-1").hide()
-    $("#questions-div").show()
 
-})
 
 $(document).ready(function () {
-    Quiz()
-    score()
+
+    $("#button").on("click", function () {
+        Quiz()
+        $("#button").hide() // after clicking the start button, the button will disappear
+        $("#photo-1").hide()
+        
+        $("#questions-div").show()
+    })
 
     // ensures the timer starts over each time it runs down from 30 seconds
     function run() {
@@ -57,7 +58,8 @@ $(document).ready(function () {
             $("#questions-div").hide()
             $("#results").show()
             $("#correct-answers").html("<h2># of correct answers: " + correctAnswers + "</h2>")
-            $("#incorrect-answers").html("<h2># of correct answers: " + incorrectAnswers + "</h2>")
+            $("#incorrect-answers").html("<h2># of incorrect answers: " + incorrectAnswers + "</h2>")
         })
     }
+    stop()
 })
