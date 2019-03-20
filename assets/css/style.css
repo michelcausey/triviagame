@@ -15,6 +15,12 @@ h1 {
     padding: 20px;
     border: solid #151515 1px;
     font-size: 60px;
+    text-shadow: 1px 1px lightgrey,
+                2px 2px #660033,
+                3px 3px #660033,
+                4px 4px #660033,
+                5px 5px #660033;
+    box-shadow: 5px 5px 5px black;
 }
 
 h2 {
@@ -34,12 +40,19 @@ p {
     margin-bottom: 0;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+    text-shadow: 1px 1px lightgrey,
+                2px 2px #660033,
+                3px 3px #660033,
+                4px 4px #660033,
+                5px 5px #660033;
+    box-shadow: 5px 5px 5px black;
+
 }
 
 #questions-div {
     color: white;
     font-size: 36px;
-    background-color: #4A235A;
+    background-color: #4a148c;
     font-family: 'Oswald', sans-serif;
     display: none;
 }
@@ -52,6 +65,12 @@ p {
     color: #330033;
     border: dotted 2px;
     font-family: 'Freckle Face', cursive;
+    text-shadow: 1px 1px lightgrey,
+                2px 2px #660033,
+                3px 3px #660033,
+                4px 4px #660033,
+                5px 5px #660033;
+    box-shadow: 5px 5px 5px black;
 }
 
 #submit {
@@ -61,12 +80,44 @@ p {
     background-color: #00FF00;
     color: #330033;
     border: dotted 2px;
-    color: #330033;
     font-family: 'Freckle Face', cursive;
+    text-shadow: 1px 1px lightgrey,
+                 2px 2px #660033,
+                 3px 3px #660033,
+                 4px 4px #660033,
+                 5px 5px #660033;
+    box-shadow: 5px 5px 5px black;
 }
 
 #results {
     font-size: 48px;
     color: #00FF00;  
     display: none;
+}
+
+.img-head {
+    border: white 1px solid
+
+}
+
+.question-images {
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px black;
+}
+
+.odd {
+    background-color: #9370DB;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    border: 1px dotted white;
+    box-shadow: 10px 10px 10px black;
+}
+
+.even {
+    background-color: #8FBC8F;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    border: 1px dotted white;
+    color: black;
+    box-shadow: 10px 10px 10px black;
 }

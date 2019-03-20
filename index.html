@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Freckle+Face|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body style="background-image: url('./assets/images/diagmonds.png')">
@@ -20,11 +20,14 @@
         <div class="container" id="title-div">
             <h1>Scary Movie Trivia</h1>
             <div id="photo-1">
-                <img src="https://media.giphy.com/media/3o7aTyXy0Xo6Kf1sRi/giphy.gif" style="width: 245px; height: 140px; margin-left: 55px; margin-top: 10px;">
-                <img src="https://media1.giphy.com/media/bcpJ7xEAqdpXq/giphy.gif" style="width: 245px; height: 140px; margin-top: 10px;">
-                <img src="https://24.media.tumblr.com/bb2a9552523079067650181e254c4dcb/tumblr_n6maqfTSLG1rp0vkjo1_500.gif"
+                <img class="img-head" src="/assets/images/carrie-stephen-king_dl.jpg"
+                    style="width: 245px; height: 140px; margin-left: 55px; margin-top: 10px;">
+                <img class="img-head" src="/assets/images/the-exorcist-2-1200-1200-675-675-crop-000000.jpg"
                     style="width: 245px; height: 140px; margin-top: 10px;">
-                <img src="https://media.giphy.com/media/3otPoJhe5AZrhllEeQ/giphy.gif" style="width: 245px; height: 140px; margin-top: 10px;">
+                <img class="img-head" src="/assets/images/urban-legend-backseat.jpg"
+                    style="width: 245px; height: 140px; margin-top: 10px;">
+                <img class="img-head" src="/assets/images/what-lies-beneath.jpg"
+                    style="width: 245px; height: 140px; margin-top: 10px;">
             </div>
             <hr>
             <div class="container" id="timer">
@@ -36,25 +39,34 @@
         </div>
 
         <div class="container" id="questions-div">
-            <img src="./assets/images/q1 right answer.jpg" alt="The Reaping" style="height: 300px; width: 225px;">
+            <div class="odd">
+                <img class="question-images" src="./assets/images/q1 right answer.jpg" alt="The Reaping"
+                    style="height: 300px; width: 225px;">
+                <hr>
+                <p>1. 'The Reaping' portrays which biblical events?<br>
+                    <input type="radio" name="question-1" class="incorrect"> The Destruction of Sodom & Gomorrah<br>
+                    <input type="radio" name="question-1" class="incorrect"> The Great Flood<br>
+                    <input type="radio" name="question-1" class="correct"> The Plagues of Egypt<br>
+                    <input type="radio" name="question-1" class="incorrect"> David vs. Goliath<br>
+                </p>
+            </div>
             <hr>
-            <p>1. 'The Reaping' portrays which biblical events?<br>
-                <input type="radio" name="question-1" class="incorrect"> The Destruction of Sodom & Gomorrah<br>
-                <input type="radio" name="question-1" class="incorrect"> The Great Flood<br>
-                <input type="radio" name="question-1" class="correct"> The Plagues of Egypt<br>
-                <input type="radio" name="question-1" class="incorrect"> David vs. Goliath<br>
-            </p>
+            <div class="even">
+            <img class="question-images" src="./assets/images/q2 right answer.jpg" alt="The Ring"
+                style="height: 300px; width: 225px;">
             <hr>
-            <img src="./assets/images/q2 right answer.jpg" alt="The Ring" style="height: 300px; width: 225px;">
-            <hr>
-            <p>2. Select the correct character name / actress name of the mom from "The Ring," "The Ring 2," & "Rings":<br>
+            <p>2. Select the correct character name / actress name of the mom from "The Ring," "The Ring 2," &
+                "Rings":<br>
                 <input type="radio" name="question-2" class="incorrect"> Margaret White / Piper Laurie<br>
                 <input type="radio" name="question-2" class="correct"> Rachel Keller / Naomi Watts<br>
                 <input type="radio" name="question-2" class="incorrect"> Lynn Sear / Toni Collette<br>
                 <input type="radio" name="question-2" class="incorrect"> Annie Wilkes / Kathy Bates<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q3  right answer.jpg" alt="Paranormal Activity" style="height: 300px; width: 225px;">
+            <div class="odd">
+            <img class="question-images" src="./assets/images/q3  right answer.jpg" alt="Paranormal Activity"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>3. As of September 2018, how many movies make up the Paranormal Activity series?<br>
                 <input type="radio" name="question-3" class="incorrect"> 4<br>
@@ -62,17 +74,24 @@
                 <input type="radio" name="question-3" class="correct"> 6<br>
                 <input type="radio" name="question-3" class="incorrect"> 7<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q4  right answer.jpg" alt="IT" style="height: 300px; width: 225px;">
+            <div class="even">
+            <img class="question-images" src="./assets/images/q4  right answer.jpg" alt="IT"
+                style="height: 300px; width: 225px;">
             <hr>
+            
             <p>4. Which of the following characters are NOT a member of "The Losers Club" in Stephen King's IT?<br>
                 <input type="radio" name="question-4" class="incorrect"> Richard Tozier<br>
                 <input type="radio" name="question-4" class="incorrect"> Bill Denbrough<br>
                 <input type="radio" name="question-4" class="incorrect"> Beverly Marsh<br>
                 <input type="radio" name="question-4" class="correct"> Henry Bowers<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q5 right answer.jpg" alt="The Strangers" style="height: 300px; width: 225px;">
+            <div class="odd">
+            <img class="question-images" src="./assets/images/q5 right answer.jpg" alt="The Strangers"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>5. In "The Strangers", who does the girl in the blonde mask ask for at the door, during her initial
                 contact with Kristen & James?<br>
@@ -81,8 +100,11 @@
                 <input type="radio" name="question-5" class="incorrect"> Terrie <br>
                 <input type="radio" name="question-5" class="incorrect"> Tabatha<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q6 right answer.jpg" alt="Darkness Falls" style="height: 300px; width: 225px;">
+            <div class="even">
+            <img class="question-images" src="./assets/images/q6 right answer.jpg" alt="Darkness Falls"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>6. "Darkness Falls" tells the revenge story of which magical creature? <br>
                 <input type="radio" name="question-6" class="incorrect"> Jack Frost<br>
@@ -90,8 +112,11 @@
                 <input type="radio" name="question-6" class="correct"> The Toothfairy <br>
                 <input type="radio" name="question-6" class="incorrect"> Belsnickel<br>
             </p>
+            </div>
             <hr>
-            <img src="./assets/images/q7 right answer.jpg" alt="The Exorcist" style="height: 300px; width: 225px;">
+            <div class="odd">
+            <img class="question-images" src="./assets/images/q7 right answer.jpg" alt="The Exorcist"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>7. In what US city can you see the stairs Damien fell down in "The Exorcist?" <br>
                 <input type="radio" name="question-7" class="incorrect"> Mount Hood, Oregon<br>
@@ -99,8 +124,11 @@
                 <input type="radio" name="question-7" class="incorrect"> Vacherie, Louisiana<br>
                 <input type="radio" name="question-7" class="correct"> Georgetown, Washington D.C.<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q8 right answer.jpg" alt="IT-2" style="height: 300px; width: 225px;">
+            <div class="even">
+            <img class="question-images" src="./assets/images/q8 right answer.jpg" alt="IT-2"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>8. What fictional Maine town is the setting for Stephen King's IT? <br>
                 <input type="radio" name="question-8" class="incorrect"> Castle Rock<br>
@@ -108,9 +136,13 @@
                 <input type="radio" name="question-8" class="correct"> Derry<br>
                 <input type="radio" name="question-8" class="incorrect"> Ogunquit<br>
             </p>
+            </div>
             <hr>
-            <img src="./assets/images/q9 right answer.jpg" alt="Conjuring" style="height: 300px; width: 225px;">
+            <div class="odd">
+            <img class="question-images" src="./assets/images/q9 right answer.jpg" alt="Conjuring"
+                style="height: 300px; width: 225px;">
             <hr>
+
             <p>9. Put the movies from "The Conjuring" series in chronological order: <br>
                 <input type="radio" name="question-9" class="incorrect"> Annabelle, The Conjuring, The Nun, The
                 Conjuring 2<br>
@@ -121,8 +153,11 @@
                 <input type="radio" name="question-9" class="incorrect"> The Conjuring, The Nun, The Conjuring 2,
                 Annabelle<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q10 right answer.jpg" alt="Oculus" style="height: 300px; width: 225px;">
+            <div class="even">
+            <img class="question-images" src="./assets/images/q10 right answer.jpg" alt="Oculus"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>10. In the movie "Oculus", Kaylie begins eating an apple only to realize it's actually a(n): <br>
                 <input type="radio" name="question-10" class="incorrect"> Eyeball<br>
@@ -130,8 +165,11 @@
                 <input type="radio" name="question-10" class="incorrect"> Onion<br>
                 <input type="radio" name="question-10" class="incorrect"> Heart<br>
             </p>
+            </div>
             <hr>
-            <img src="./assets/images/q11 right answer.jpg" alt="Friday The 13th" style="height: 300px; width: 225px;">
+            <div class="odd">
+            <img class="question-images" src="./assets/images/q11 right answer.jpg" alt="Friday The 13th"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>11. Which child spent their (last) summer at Camp Crystal Lake? <br>
                 <input type="radio" name="question-11" class="incorrect"> Freddy<br>
@@ -140,8 +178,11 @@
                 <!--pronounced JSON-->
                 <input type="radio" name="question-11" class="incorrect"> Johnny<br>
             </p>
+        </div>
             <hr>
-            <img src="./assets/images/q12 right answer.jpg" alt="The Cabin in the Woods" style="height: 300px; width: 225px;">
+            <div class="even">
+            <img class="question-images" src="./assets/images/q12 right answer.jpg" alt="The Cabin in the Woods"
+                style="height: 300px; width: 225px;">
             <hr>
             <p>12. The five main characters in "The Cabin in the Woods" represent a specific trope. Which trope is
                 missing from the list:
@@ -152,6 +193,7 @@
                 <input type="radio" name="question-12" class="incorrect"> The Savior<br>
             </p>
             <hr>
+            </div>
 
             <button type="button" class="btn btn-warning" id="submit">Submit Answers</button>
         </div>
@@ -160,20 +202,22 @@
             <div id="correct-answers"></div>
             <div id="incorrect-answers"></div>
             <div id="photo-2">
-                <img src="https://thumbs.gfycat.com/HeavenlyFrighteningEyas-size_restricted.gif" style="width: 245px; height: 140px; margin-left: 50px;">
-                <img src="https://media.giphy.com/media/ZpOeITFlR77ry/giphy.gif" style="width: 245px; height: 140px;">
-                <img src="https://thumbs.gfycat.com/TallPracticalBlackfly-small.gif" style="width: 245px; height: 140px;">
-                <img src="https://vignette.wikia.nocookie.net/deathbattlefanon/images/8/88/Freddy-krueger-gif-14.gif/revision/latest?cb=20170927044629"
-                    style="width: 245px; height: 140px;">
+                <img class="img-head" src="/assets/images/heresjohnny.jpg" style="width: 245px; height: 140px; margin-left: 50px;">
+                <img class="img-head" src="/assets/images/jason.jpg" style="width: 245px; height: 140px;">
+                <img class="img-head" src="/assets/images/Freddy-Krueger-Day-September-13-1991-Los-Angeles.jpg" style="width: 245px; height: 140px;">
+                <img class="img-head" src="/assets/images/NECA-Michael-Myers-4-1.jpg" style="width: 245px; height: 140px;">
             </div>
         </div>
 
         <script src="./assets/javascript/app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
             crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
 </body>
 
